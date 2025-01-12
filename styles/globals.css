@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Brand;
+  src: url("../public/fonts/BRAND___.TTF");
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+
+.brand-ttf {
+  font-family: Brand;
+}
