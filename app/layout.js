@@ -1,6 +1,7 @@
 'use client';
 import '../styles/globals.css';
 import { useState, useEffect } from 'react';
+import { FaSun, FaMoon } from 'react-icons/fa';
 
 export default function RootLayout({ children }) {
   const [theme, setTheme] = useState('light');
@@ -19,13 +20,16 @@ export default function RootLayout({ children }) {
   };
 
   return (
-    <html lang="fr">
+    <html lang='fr'>
       <body>
         <button
           onClick={toggleTheme}
-          className="fixed top-5 right-5 bg-gray-200 dark:bg-gray-800 p-2 rounded"
-        >
-          {theme === 'light' ? '🌙' : '☀️'}
+          className='fixed top-5 right-5 bg-gray-200 dark:bg-gray-800 p-2 rounded z-20'>
+          {theme === 'light' ? (
+            <FaMoon className='text-stone-500' />
+          ) : (
+            <FaSun className='text-yellow-500' />
+          )}
         </button>
         {children}
       </body>

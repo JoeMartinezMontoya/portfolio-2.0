@@ -1,0 +1,64 @@
+{
+    "Projects": [
+        {
+            "id": 1,
+            "name": "PetsCare",
+            "description": "Site web communautaire axé sur le bien-être animal",
+            "type": "website"
+        },
+        {
+            "id": 2,
+            "name": "Speye",
+            "description": "Site web d'avis comparatif communautaire",
+            "type": "website"
+        },
+        {
+            "id": 3,
+            "name": "PixelPathFinder",
+            "description": "Site de jeux vidéos à astuce et soluce sur mesure",
+            "type": "website"
+        },
+        {
+            "id": 4,
+            "name": "Agora (WT)",
+            "description": "Un jeu inspiré de Museum of anything goes",
+            "type": "video-game"
+        },
+        {
+            "id": 5,
+            "name": "Labyrinthe",
+            "description": "Jeu vidéo d'horreur d'énigme en FPV",
+            "type": "video-game"
+        },
+        {
+            "id": 6,
+            "name": "Z.A. (WT)",
+            "description": "Jeu vidéo survival horror multijoueur",
+            "type": "video-game"
+        },
+        {
+            "id": 7,
+            "name": "City Scout",
+            "description": "Site web d'avis de voisinage",
+            "type": "website"
+        },
+        {
+            "id": 8,
+            "name": "Des Ombres Au Plafond",
+            "description": "Des disparitions étranges ont lieu dans des hôpitaux en Afrique du Sud",
+            "type": "video"
+        },
+        {
+            "id": 9,
+            "name": "Le Prix De l'Attention",
+            "description": "Une jeune danseuse classique Canadienne commet l'impensable pour de l'attention",
+            "type": "video"
+        },
+        {
+            "id": 10,
+            "name": "Parchemin (WT)",
+            "description": "Jeu vidéo d'aventure a exploration horizontale",
+            "type": "video-game"
+        }
+    ]
+}
