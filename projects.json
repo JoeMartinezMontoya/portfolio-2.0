@@ -3,62 +3,172 @@
         {
             "id": 1,
             "name": "PetsCare",
-            "description": "Site web communautaire axé sur le bien-être animal",
-            "type": "website"
+            "status": "En cours",
+            "description": "Plateforme sociale dédiée au petsitting et au bien-être animal.",
+            "fullDescription": "PetsCare est une plateforme communautaire pensée pour faciliter la mise en relation entre propriétaires d’animaux et passionnés prêts à offrir leurs services de garde et de soins. Ce projet, initialement développé en version monolithique sur Symfony 4.6 en 2018, a été repensé fin 2024 avec une architecture en micro-services pour offrir des fonctionnalités évolutives et une meilleure performance. PetsCare met l'accent sur la confiance et la sécurité des échanges via des profils vérifiés, des avis communautaires et des services personnalisés, afin de garantir le bien-être des animaux et la tranquillité d'esprit de leurs propriétaires.",
+            "type": "website",
+            "images": [
+                "/images/petscare-about.png",
+                "/images/petscare-contact.png",
+                "/images/petscare-dashboard.png",
+                "/images/petscare-homepage.png",
+                "/images/petscare-login.png",
+                "/images/petscare-newpost.png",
+                "/images/petscare-posts.png",
+                "/images/petscare-profil.png"
+            ],
+            "technologies": [
+                "GitHub",
+                "NextJS",
+                "Bootstrap",
+                "Symfony",
+                "ApiPlatform",
+                "MariaDB",
+                "GitHub Actions",
+                "PHPUnit",
+                "Jest",
+                "Composer",
+                "Npm",
+                "Yarn",
+                "Notion"
+            ]
         },
         {
             "id": 2,
             "name": "Speye",
-            "description": "Site web d'avis comparatif communautaire",
-            "type": "website"
+            "status": "En cours",
+            "description": "Plateforme communautaire de comparatifs et d'avis.",
+            "fullDescription": "Un projet ambitieux visant à centraliser des avis détaillés et des comparatifs sur divers produits et services. Speye met l'accent sur l'objectivité des critiques grâce à des analyses croisées et des évaluations communautaires. Initié pour répondre au besoin d'un espace d'échange transparent et fiable, il évolue pour offrir des fonctionnalités de recommandations personnalisées.",
+            "type": "website",
+            "images": [
+                "/images/speye-details.png",
+                "/images/speye-details2.png",
+                "/images/speye-login.png",
+                "/images/speye-profil.png",
+                "/images/speye-subjects.png"
+            ],
+            "technologies": [
+                "GitHub",
+                "Bootstrap",
+                "Symfony",
+                "MySQL",
+                "Composer",
+                "Trello"
+            ]
         },
         {
             "id": 3,
             "name": "PixelPathFinder",
-            "description": "Site de jeux vidéos à astuce et soluce sur mesure",
-            "type": "website"
+            "status": "En attente",
+            "description": "Plateforme communautaire dédiée aux jeux vidéo.",
+            "fullDescription": "PixelPathFinder rassemble passionnés de jeux vidéo autour de théories, astuces, solutions et discussions sur le lore des jeux. Pensé comme un lieu d'échange et de découverte, il met en avant la culture vidéoludique sous toutes ses formes, en proposant des contenus collaboratifs et une interface immersive.",
+            "type": "website",
+            "images": [],
+            "technologies": [
+                "Stack technique en cours de sélection"
+            ]
         },
         {
             "id": 4,
             "name": "Agora (WT)",
-            "description": "Un jeu inspiré de Museum of anything goes",
-            "type": "video-game"
+            "status": "En attente",
+            "description": "Jeu vidéo narratif et expérimental sur navigateur.",
+            "fullDescription": "Inspiré par The Museum of Anything Goes, Agora propose une expérience interactive où exploration et réflexion se mêlent. Ce projet vise à repousser les limites de l’interaction utilisateur dans un environnement déconcertant et surréaliste, offrant des parcours uniques à chaque joueur.",
+            "type": "video-game",
+            "images": [],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ]
         },
         {
             "id": 5,
             "name": "Labyrinthe",
-            "description": "Jeu vidéo d'horreur d'énigme en FPV",
-            "type": "video-game"
+            "status": "En cours",
+            "description": "Jeu d’énigmes survival horror en vue subjective.",
+            "fullDescription": " Plongé dans un univers sombre et oppressant, Labyrinthe propose une expérience immersive où chaque choix compte. Le joueur doit résoudre des énigmes et survivre dans un dédale changeant, où le décor évolue au fil de la progression, renforçant la tension et l'immersion.",
+            "type": "video-game",
+            "images": [],
+            "technologies": [
+                "Unity"
+            ]
         },
         {
             "id": 6,
             "name": "Z.A. (WT)",
-            "description": "Jeu vidéo survival horror multijoueur",
-            "type": "video-game"
+            "status": "En attente",
+            "description": "Jeu de survie dans un monde post-apocalyptique infesté de zombies.",
+            "fullDescription": "Z.A. plonge le joueur dans un univers brutal où la survie dépend de la stratégie et de la gestion des ressources. Ce projet mêle exploration, gestion de camp et affrontements intenses dans un monde ravagé, offrant une expérience réaliste et oppressante du survival horror.",
+            "type": "video-game",
+            "images": [],
+            "technologies": [
+                "Stack technique en cours de sélection"
+            ]
         },
         {
             "id": 7,
             "name": "City Scout",
-            "description": "Site web d'avis de voisinage",
-            "type": "website"
+            "status": "En attente",
+            "description": "Plateforme de recommandations locales personnalisées.",
+            "fullDescription": "City Scout regroupe et compare des avis sur des établissements autour d'une localisation précise. Ce projet vise à simplifier les recherches en centralisant critiques, notations et expériences utilisateurs, pour guider efficacement les choix de lieux à visiter.",
+            "type": "website",
+            "images": [],
+            "technologies": [
+                "Stack technique en cours de sélection"
+            ]
         },
         {
             "id": 8,
             "name": "Des Ombres Au Plafond",
-            "description": "Des disparitions étranges ont lieu dans des hôpitaux en Afrique du Sud",
-            "type": "video"
+            "status": "En ligne",
+            "description": "Vidéo sur des disparitions étranges dans des hôpitaux sud-africains.",
+            "fullDescription": "Des Ombres au Plafond plonge le spectateur dans une atmosphère oppressante en explorant plusieurs cas mystérieux de disparitions survenues dans des hôpitaux en Afrique du Sud. Ce documentaire mêle faits réels, témoignages glaçants et théories troublantes pour questionner les zones d'ombre entourant ces événements. À travers une narration immersive et des recherches approfondies, la vidéo invite à réfléchir sur les limites de la sécurité dans les établissements médicaux et les mystères qui s'y cachent. Ce projet vise à provoquer la curiosité et à éveiller l'esprit critique face à des phénomènes encore inexpliqués.",
+            "type": "video",
+            "images": [
+                "/images/warning-doap.png",
+                "/images/title-doap.png",
+                "/images/excerpt-doap.png",
+                "/images/excerpt2-doap.png"
+            ],
+            "technologies": [
+                "Movavi Video",
+                "Movavi Photo",
+                "Audacity",
+                "Notion"
+            ]
         },
         {
             "id": 9,
             "name": "Le Prix De l'Attention",
-            "description": "Une jeune danseuse classique Canadienne commet l'impensable pour de l'attention",
-            "type": "video"
+            "status": "En cours",
+            "description": "Vidéo documentaire sur l’histoire de Kelly Ronahan.",
+            "fullDescription": "Le Prix de l'Attention explore la spirale médiatique et psychologique autour de Kelly Ronahan, questionnant les limites de l'exposition publique et l'impact des réseaux sociaux sur la santé mentale. Ce projet propose une immersion sensible et critique dans les dérives de la quête d’attention.",
+            "type": "video",
+            "images": [
+                "/images/intro.png",
+                "/images/warning.png",
+                "/images/excerpt.png",
+                "/images/trigger-warning.png"
+            ],
+            "technologies": [
+                "Vegas Pro",
+                "Movavi Photo",
+                "Sound Forge",
+                "Notion"
+            ]
         },
         {
             "id": 10,
             "name": "Parchemin (WT)",
-            "description": "Jeu vidéo d'aventure a exploration horizontale",
-            "type": "video-game"
+            "status": "En attente",
+            "description": "Jeu d’aventure en scrolling horizontal inspiré des mythologies.",
+            "fullDescription": "Parchemin transporte les joueurs dans un univers mêlant Égypte ancienne et Grèce antique. Avec ses graphismes atypiques et son gameplay d'exploration, le jeu propose une aventure mystérieuse où énigmes et découvertes mythologiques s'entrelacent dans un voyage intemporel.",
+            "type": "video-game",
+            "images": [],
+            "technologies": [
+                "Stack technique en cours de sélection"
+            ]
         }
     ]
 }
