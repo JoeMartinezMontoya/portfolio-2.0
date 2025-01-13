@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Data from '../projects.json';
 import {
@@ -19,6 +19,7 @@ import {
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const scrollContainerRef = useRef(null);
 
   const getPatternByProjectName = (name) => {
     switch (name.toLowerCase()) {
@@ -99,6 +100,14 @@ export default function Projects() {
     );
   };
 
+  useEffect(() => {
+    const container = scrollContainerRef.current;
+    if (window.innerWidth < 768 && container) {
+      container.style.overflowY = 'auto';
+      container.style.maxHeight = '70vh';
+    }
+  }, []);
+
   return (
     <section
       id='projects'
@@ -109,7 +118,9 @@ export default function Projects() {
         Mes Projets
       </h2>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+      <div
+        className='grid grid-cols-1 pb-20 md:grid-cols-2 gap-6 md:h-auto md:overflow-visible'
+        ref={scrollContainerRef}>
         {Data['Projects'].map((project) => (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
