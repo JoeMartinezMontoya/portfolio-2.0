@@ -47,7 +47,7 @@ const contactMethods = [
 export default function Contact() {
   const [showModal, setShowModal] = useState(false);
   return (
-    <section className='h-screen p-10 bg-gradient-to-t from-gray-950 to-blue-950 relative'>
+    <section className='h-screen p-10 bg-gradient-to-b dark:bg-gradient-to-t from-gray-500 to-gray-50 dark:from-gray-950 dark:to-blue-950 text-slate-800 dark:text-slate-200 relative'>
       <motion.div
         className='absolute inset-0 bg-heart opacity-20 z-0 pointer-events-none'
         initial={{ backgroundPosition: '0% 50%' }}

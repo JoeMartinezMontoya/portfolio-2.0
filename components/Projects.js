@@ -51,7 +51,7 @@ export default function Projects() {
   const getIconByType = (type) => {
     switch (type) {
       case 'website':
-        return <FaCode className='text-indigo-600 text-3xl' />;
+        return <FaCode className='text-blue-900 text-3xl' />;
       case 'video':
         return <FaYoutube className='text-red-700 text-3xl' />;
       case 'video-game':
@@ -65,7 +65,7 @@ export default function Projects() {
     switch (status.toLowerCase()) {
       case 'en cours':
         return (
-          <span className='px-3 py-1 w-28 bg-blue-500 text-white text-sm flex flex-row items-center justify-center rounded'>
+          <span className='px-3 py-1 w-28 bg-blue-900 text-white text-sm flex flex-row items-center justify-center rounded'>
             <FaPlayCircle className='mr-2' /> En cours
           </span>
         );
@@ -111,10 +111,10 @@ export default function Projects() {
   return (
     <section
       id='projects'
-      className='h-screen p-10 bg-gradient-to-bl from-gray-950 to-blue-950'>
+      className='h-screen p-10 bg-gradient-to-bl from-gray-500 to-gray-50 dark:from-gray-950 dark:to-blue-950 text-slate-800 dark:text-slate-200'>
       <div className='absolute inset-0 bg-grid opacity-20 z-0 pointer-events-none'></div>
 
-      <h2 className='text-3xl text-center dark:text-white my-10 brand-ttf'>
+      <h2 className='text-3xl text-center my-10 text-opacity-100 brand-ttf'>
         Mes Projets
       </h2>
 
@@ -127,7 +127,7 @@ export default function Projects() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
             key={project.id}
-            className={`p-6 text-white bg-white dark:bg-gray-700 rounded drop-shadow-lg relative group overflow-hidden`}>
+            className={`p-6 bg-gray-400 dark:bg-gray-800 rounded drop-shadow-lg relative group overflow-hidden`}>
             <div
               className='absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-1000'
               style={{
@@ -166,14 +166,14 @@ export default function Projects() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}>
             <motion.div
-              className='text-white bg-white dark:bg-gray-800 rounded-lg p-6 max-w-4xl w-full relative'
+              className='bg-gray-400 dark:bg-gray-800 rounded-lg p-6 max-w-4xl w-full relative'
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.8 }}
               transition={{ duration: 0.3 }}>
               <button
                 onClick={() => setSelectedProject(null)}
-                className='absolute top-4 right-4 text-white bg-red-600 rounded-full p-2 hover:bg-red-800 transition'>
+                className='absolute top-4 right-4 bg-red-600 rounded-full p-2 hover:bg-red-800 transition'>
                 <FaTimes />
               </button>
 
@@ -211,7 +211,7 @@ export default function Projects() {
                 {selectedProject.technologies?.map((tech, index) => (
                   <span
                     key={index}
-                    className='px-3 py-1 bg-blue-500 text-white text-sm rounded-full'>
+                    className='px-3 py-1 bg-blue-900 text-white text-sm rounded-full'>
                     {tech}
                   </span>
                 ))}

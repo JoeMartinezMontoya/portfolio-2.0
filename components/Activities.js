@@ -24,7 +24,7 @@ export default function ActivitiesSection() {
   }, []);
 
   return (
-    <section className='h-screen p-10 bg-gradient-to-b from-gray-950 to-blue-950 relative'>
+    <section className='h-screen p-10 bg-gradient-to-b rom-gray-500 to-gray-50 dark:from-gray-950 dark:to-blue-950 text-slate-800 dark:text-slate-200 relative'>
       <motion.div
         initial={{ backgroundPosition: '0% 0%' }}
         animate={{ backgroundPosition: ['0% 0%', '0% 100%'] }}
@@ -32,7 +32,7 @@ export default function ActivitiesSection() {
         className='absolute inset-0 bg-carbon opacity-20 z-0 pointer-events-none'
       />
 
-      <h2 className='text-3xl text-center text-white mt-10 mb-5 brand-ttf'>
+      <h2 className='text-3xl text-center mt-10 mb-5 brand-ttf'>
         Mes Activités
       </h2>
 
@@ -76,8 +76,7 @@ export default function ActivitiesSection() {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 50 }}
-              transition={{ duration: 0.3 }}
-              className='text-white'>
+              transition={{ duration: 0.3 }}>
               <h2 className='text-xl font-semibold mb-4 brand-ttf'>
                 Développement
               </h2>
@@ -110,7 +109,7 @@ export default function ActivitiesSection() {
               <div className='my-10 mx-auto'>
                 <a
                   href='https://teamtreehouse.com/'
-                  className='text-white p-2 rounded bg-blue-600 mr-4'
+                  className='p-2 text-white rounded bg-blue-800 mr-4'
                   target='_blank'>
                   Treehouse
                 </a>
@@ -121,7 +120,7 @@ export default function ActivitiesSection() {
               <div className='my-10 mx-auto'>
                 <a
                   href='https://academy.zenva.com/'
-                  className='text-white p-2 rounded bg-blue-600 mr-4'
+                  className='p-2 text-white rounded bg-blue-800 mr-4'
                   target='_blank'>
                   Zenva
                 </a>
@@ -132,7 +131,7 @@ export default function ActivitiesSection() {
               <div className='my-10 mx-auto'>
                 <a
                   href='https://www.gamedev.tv/'
-                  className='text-white p-2 rounded bg-blue-600 mr-4'
+                  className='p-2 text-white rounded bg-blue-800 mr-4'
                   target='_blank'>
                   GameDev
                 </a>
@@ -143,7 +142,7 @@ export default function ActivitiesSection() {
               <div className='my-10 mx-auto'>
                 <a
                   href='https://www.packtpub.com/'
-                  className='text-white p-2 rounded bg-blue-600 mr-4'
+                  className='p-2 text-white rounded bg-blue-800 mr-4'
                   target='_blank'>
                   Packt
                 </a>
@@ -155,7 +154,7 @@ export default function ActivitiesSection() {
               <div className='my-10 mx-auto'>
                 <a
                   href='https://training.mammothinteractive.com/'
-                  className='text-white p-2 rounded bg-blue-600 mr-4'
+                  className='p-2 text-white rounded bg-blue-800 mr-4'
                   target='_blank'>
                   MammothInteractive
                 </a>
@@ -168,15 +167,15 @@ export default function ActivitiesSection() {
               <h2 className='text-xl font-semibold mb-4 brand-ttf'>
                 Ma stack technique
               </h2>
-              <nav className='flex flex-wrap justify-center items-center space-x-4 my-6 sticky top-0 bg-gray-900 md:bg-transparent'>
+              <nav className='flex flex-wrap justify-center items-center space-x-4 my-6 sticky top-0 bg-gray-900 text-white md:text-current md:bg-transparent'>
                 {['os', 'frontend', 'backend', 'outils', 'à apprendre'].map(
                   (category) => (
                     <motion.button
                       key={category}
                       onClick={() => setActiveDevCategory(category)}
-                      className={`text-white px-3 py-1 rounded-md flex items-center space-x-2 ${
+                      className={`px-3 py-1 rounded-md flex items-center space-x-2 ${
                         activeDevCategory === category
-                          ? 'bg-blue-800'
+                          ? 'bg-blue-800 text-white'
                           : 'bg-transparent'
                       }`}>
                       <span>{category.toUpperCase()}</span>
@@ -197,7 +196,7 @@ export default function ActivitiesSection() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -50 }}
               transition={{ duration: 0.3 }}>
-              <div className='text-white'>
+              <div>
                 <h2 className='text-xl font-semibold mb-4 brand-ttf'>
                   Création de contenu
                 </h2>

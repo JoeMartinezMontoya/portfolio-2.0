@@ -7,6 +7,17 @@
   src: url("../public/fonts/BRAND___.TTF");
 }
 
+html {
+  background-color: #fff; /* fond clair par défaut */
+  color: black; /* texte noir par défaut */
+}
+
+/* Quand 'dark' est activé sur html */
+html.dark {
+  background-color: #333; /* fond sombre */
+  color: white; /* texte blanc */
+}
+
 html, body {
     height: 100%;
     margin: 0;
