@@ -111,10 +111,10 @@ export default function Projects() {
   return (
     <section
       id='projects'
-      className='h-screen p-10 bg-gradient-to-t from-gray-900 to-blue-900'>
+      className='h-screen p-10 bg-gradient-to-bl from-gray-950 to-blue-950'>
       <div className='absolute inset-0 bg-grid opacity-20 z-0 pointer-events-none'></div>
 
-      <h2 className='text-3xl text-center dark:text-white mb-20 mt-20 brand-ttf'>
+      <h2 className='text-3xl text-center dark:text-white my-10 brand-ttf'>
         Mes Projets
       </h2>
 

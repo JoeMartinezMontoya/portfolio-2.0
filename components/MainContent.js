@@ -11,8 +11,8 @@ export default function MainContent() {
 
   const sections = {
     hero: <Hero />,
-    projects: <Projects />,
     activities: <Activities />,
+    projects: <Projects />,
     contact: <Contact />,
   };
 
@@ -21,23 +21,22 @@ export default function MainContent() {
       <nav className='fixed top-0 left-0 w-full text-white flex justify-center space-x-8 py-4 bg-transparent z-10 brand-ttf'>
         <button
           onClick={() => setActiveSection('hero')}
-          className='hover:underline'>
+          className='hover:translate-y-1 hover:text-teal-700 duration-500'>
           Accueil
         </button>
         <button
+          onClick={() => setActiveSection('activities')}
+          className='hover:translate-y-1 hover:text-teal-700 duration-500'>
+          Activités
+        </button>
+        <button
           onClick={() => setActiveSection('projects')}
-          className='hover:underline'>
+          className='hover:translate-y-1 hover:text-teal-700 duration-500'>
           Projets
         </button>
         <button
-          onClick={() => setActiveSection('activities')}
-          className='hover:underline'>
-          Activités
-        </button>{' '}
-        {/* Nouveau bouton */}
-        <button
           onClick={() => setActiveSection('contact')}
-          className='hover:underline'>
+          className='hover:translate-y-1 hover:text-teal-700 duration-500'>
           Contact
         </button>
       </nav>

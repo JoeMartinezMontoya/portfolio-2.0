@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className='w-screen h-screen bg-gradient-to-br from-gray-900 to-blue-900 flex flex-col items-center justify-center relative overflow-hidden'>
+    <section className='w-screen h-screen bg-gradient-to-br  from-gray-950 to-blue-950 flex flex-col items-center justify-center relative overflow-hidden'>
       <motion.div
         initial={{ backgroundPosition: '0% 0%' }}
         animate={{ backgroundPosition: ['0% 0%', '100% 100%'] }}
