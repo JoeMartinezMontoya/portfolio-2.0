@@ -21,12 +21,13 @@ html, body {
   .bg-dots {
     background-image: radial-gradient(circle, rgba(73, 165, 168, 1) 1px, transparent 2px);
     background-size: 40px 40px;
+    background-color: #131313;
   }
 }
 
 @layer utilities {
   .bg-grid {
-    background-color:#269;
+    background-color:#131313;
     background-image: linear-gradient(white 2px, transparent 2px),
                       linear-gradient(90deg, white 2px, transparent 2px),
                       linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
@@ -59,14 +60,23 @@ html, body {
   }
 }
 
+@layer utilities {
+  .bg-heart {
+    background-color: #131313;
+    background-image: radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+                      radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+                      radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+                      radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  }
+}
+
 .scroll-container {
   overflow-y: scroll;
+  scrollbar-width: none;
 }
 
 .scroll-container::-webkit-scrollbar {
-  display: none; /* Cache complètement la scrollbar */
-}
-
-.scroll-container {
-  scrollbar-width: none; /* Cache sur Firefox */
+  display: none;
 }
