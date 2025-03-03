@@ -14,6 +14,7 @@ import {
   FaCheckCircle,
   FaArrowLeft,
   FaArrowRight,
+  FaGithub,
 } from 'react-icons/fa';
 
 export default function Projects() {
@@ -56,6 +57,17 @@ export default function Projects() {
         return <FaYoutube className='text-red-700 text-3xl' />;
       case 'video-game':
         return <FaGamepad className='text-emerald-600 text-3xl' />;
+      default:
+        return null;
+    }
+  };
+
+  const getLinkIconByType = (type) => {
+    switch (type) {
+      case 'website':
+        return <FaGithub className='text-blue-900 text-xl mr-2' />;
+      case 'video':
+        return <FaYoutube className='text-red-900 text-xl mr-2' />;
       default:
         return null;
     }
@@ -184,6 +196,22 @@ export default function Projects() {
                 {getProjectStatus(selectedProject.status)}
               </h2>
               <p className='mb-4 text-sm'>{selectedProject.fullDescription}</p>
+
+              <div className='my-4 flex flex-wrap gap-2'>
+                {selectedProject.projectLinks?.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link.url}
+                    className={`px-2 py-1 ${
+                      link.gitHubStatus === 'public'
+                        ? 'bg-green-600'
+                        : 'bg-red-600'
+                    } text-white text-sm rounded flex items-center capitalize`}>
+                    {getLinkIconByType(selectedProject.type)}
+                    {link.urlLabel} : {link.gitHubStatus}
+                  </a>
+                ))}
+              </div>
 
               {/* Carrousel */}
               {selectedProject.images && selectedProject.images.length > 0 && (

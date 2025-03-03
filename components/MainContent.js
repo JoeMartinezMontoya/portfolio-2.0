@@ -10,16 +10,16 @@ import '../styles/globals.css';
 
 export default function MainContent() {
   const [activeSection, setActiveSection] = useState('hero');
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
 
   useEffect(() => {
-    const storedTheme = localStorage.getItem('theme') || 'light';
+    const storedTheme = localStorage.getItem('theme') || 'dark';
     setTheme(storedTheme);
     document.documentElement.classList.add(storedTheme);
   }, []);
 
   const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
+    const newTheme = theme === 'dark' ? 'light' : 'dark';
     setTheme(newTheme);
 
     document.documentElement.className = '';
@@ -63,7 +63,7 @@ export default function MainContent() {
       <button
         onClick={toggleTheme}
         className='fixed top-5 right-5 bg-gray-300 dark:bg-gray-900 p-2 rounded-full z-20'>
-        {theme === 'light' ? (
+        {theme === 'dark' ? (
           <FaMoon className='text-amber-200' />
         ) : (
           <FaSun className='text-amber-200' />

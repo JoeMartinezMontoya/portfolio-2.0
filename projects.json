@@ -5,8 +5,35 @@
             "name": "PetsCare",
             "status": "En cours",
             "description": "Plateforme sociale dédiée au petsitting et au bien-être animal.",
-            "fullDescription": "PetsCare est une plateforme communautaire pensée pour faciliter la mise en relation entre propriétaires d’animaux et passionnés prêts à offrir leurs services de garde et de soins. Ce projet, initialement développé en version monolithique sur Symfony 4.6 en 2018, a été repensé fin 2024 avec une architecture en micro-services pour offrir des fonctionnalités évolutives et une meilleure performance. PetsCare met l'accent sur la confiance et la sécurité des échanges via des profils vérifiés, des avis communautaires et des services personnalisés, afin de garantir le bien-être des animaux et la tranquillité d'esprit de leurs propriétaires.",
+            "fullDescription": "PetsCare est une plateforme communautaire pensée pour faciliter la mise en relation entre propriétaires d’animaux et passionnés prêts à offrir leurs services de garde et de soins. Ce projet, initialement développé en version monolithique sur Symfony 4.6 en 2018, a été repensé fin 2024 avec une architecture en micro-services qui sont eux-même au plus proche d'une architecture héxagonale pour offrir des fonctionnalités évolutives et une meilleure performance. PetsCare met l'accent sur la confiance et la sécurité des échanges via des profils vérifiés, des avis communautaires et des services personnalisés, afin de garantir le bien-être des animaux et la tranquillité d'esprit de leurs propriétaires. ",
             "type": "website",
+            "projectLinks": [
+                {
+                    "url": "https://github.com/JoeMartinezMontoya/petscare-infrastructure",
+                    "urlLabel": "Infrastructure",
+                    "gitHubStatus": "public"
+                },
+                {
+                    "url": "https://github.com/JoeMartinezMontoya/petscare-frontend",
+                    "urlLabel": "FrontEnd",
+                    "gitHubStatus": "public"
+                },
+                {
+                    "url": "https://github.com/JoeMartinezMontoya/petscare-users-service",
+                    "urlLabel": "Users-Service",
+                    "gitHubStatus": "public"
+                },
+                {
+                    "url": "https://github.com/JoeMartinezMontoya/petscare-auth-service",
+                    "urlLabel": "Auth-Service",
+                    "gitHubStatus": "public"
+                },
+                {
+                    "url": "https://github.com/JoeMartinezMontoya/petscare-pets-service",
+                    "urlLabel": "Pets-Service",
+                    "gitHubStatus": "private"
+                }
+            ],
             "images": [
                 "/images/petscare-about.png",
                 "/images/petscare-contact.png",
